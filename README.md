@@ -1,4 +1,4 @@
-# greedy-algorithms-minimum-spanning-trees-and-dynamic-programming
+# greedy-algorithms-minimum-spanning-trees-and-dynamic-programming-coursera
 
 Taught by Tim Roughgarden. (Stanford University)
 
