@@ -88,8 +88,8 @@ end
 
 def main
   start = Time.now
-  file_name = "clustering_with_hd_test_cases/clustering2-example-200-12-solution-4.txt"
-  #file_name = "clustering_big.txt"
+  #file_name = "clustering_with_hd_test_cases/dummy_5_sol_2.txt"
+  file_name = "clustering_big.txt"
   nodes = load_nodes(file_name)
   puts "Nodes loaded in memory " +  (Time.now - start).to_s
 
@@ -106,19 +106,9 @@ def main
     end
   end
   puts "Algorithm executed in " +  (Time.now - start).to_s
+  puts "clusters -> #{set.components}"
+  puts "Number of clusters -> #{set.components.size}"
 
-  puts set.components.size
-
-  counter = 0
-  set.components.each do |id, value|
-    if(value != 1)
-      puts id
-      counter = counter + 1
-    end
-  end
-  puts counter
-
-  puts "Number of clusters -> #{set.components}" 
 end
 
 main
