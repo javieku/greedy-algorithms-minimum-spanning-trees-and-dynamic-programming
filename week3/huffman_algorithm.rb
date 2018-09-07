@@ -66,7 +66,7 @@ class HuffmanCodingAlgorithm
     def execute(alphabet)
         @ht = impl(alphabet)
     end
-
+private
     def impl(alphabet)
         if(alphabet.length == 2)
             ht = HuffmanTree.new()
